@@ -46,7 +46,7 @@
                         type="text"
                         class="form-control"
                         id="email"
-                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                         autocomplete="email"
                         required
                     />
@@ -60,7 +60,7 @@
                         type="text"
                         class="form-control"
                         id="website"
-                        pattern="^(https?:\/\/)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}(\/[^\s]*)?$"
+                        pattern="(https?:\/\/)?[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,3}(\/[^\s]*)?"
                         required
                     />
                     <div class="invalid-feedback">
@@ -86,5 +86,6 @@
                 </button>
             </form>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
