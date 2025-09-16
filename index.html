@@ -20,6 +20,7 @@
                         class="form-control"
                         id="name"
                         minlength="2"
+                        autocomplete="name"
                         required
                     />
                     <div class="invalid-feedback">
@@ -45,7 +46,8 @@
                         type="text"
                         class="form-control"
                         id="email"
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        autocomplete="email"
                         required
                     />
                     <div class="invalid-feedback">
@@ -58,7 +60,7 @@
                         type="text"
                         class="form-control"
                         id="website"
-                        pattern="(https?:\/\/)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}(\/[^\s]*)?"
+                        pattern="^(https?:\/\/)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}(\/[^\s]*)?$"
                         required
                     />
                     <div class="invalid-feedback">
@@ -72,6 +74,7 @@
                         class="form-control"
                         id="phone"
                         pattern="\d{3}-?\d{3}-?\d{4}"
+                        autocomplete="tel"
                         required
                     />
                     <div class="invalid-feedback">
